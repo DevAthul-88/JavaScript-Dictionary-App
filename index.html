@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Javascript Dictionary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-sm navbar-light bg-light">
+      <div class="container">
+        <h1 class="navbar-brand fs-2 fw-bold">Dictionary App</h1>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="alert alert-danger" id="message" style="display: none"></div>
+
+      <div class="d-flex">
+        <input
+          type="text"
+          placeholder="Enter word"
+          class="form-control search"
+          id="input"
+          spellcheck="true"
+        />
+        <button type="button" name="button" class="btn btn-primary">
+          Search
+        </button>
+      </div>
+
+      <table class="table mt-5 table-bordered" id="table" style="display: none;">
+        <thead>
+          <tr>
+            <th scope="col">Key</th>
+            <th scope="col">Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Word</td>
+            <td id="word"></td>
+          </tr>
+          <tr>
+            <td>Phonetic</td>
+            <td id="phonetic"></td>
+          </tr>
+          <tr>
+            <td>Definition</td>
+            <td id="definition"></td>
+          </tr>
+          <tr>
+            <td>Example</td>
+            <td id="example"></td>
+          </tr>
+          <tr>
+            <td>Source</td>
+            <td >
+              <a href="" target="_blank" rel="noopener noreferrer" id="source"></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./script.js" charset="utf-8"></script>
+  </body>
+</html>
